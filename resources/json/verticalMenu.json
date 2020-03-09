@@ -1,0 +1,47 @@
+{"menu": [
+    {"url":"dashboard","uri":"dashboard", "name":"Dashboard", "slug":"dashboard", "icon":"feather icon-home","policy":""
+
+    },
+    {"url":"","navheader":"Organisations","icon":"","policy":"for-superAdmin"},
+        {"url":"organisations","uri": "organisations", "name":"View all", "icon":"feather icon-eye","policy":"for-superAdmin"},
+        {"url":"javascript:void(0)", "name":"Add new", "icon":"feather icon-plus","policy":"for-superAdmin", "id":"sidd"},
+        {"url":"", "name":"Billings","icon": "","policy":"for-superAdmin",
+            "submenu": [
+                {"url":"billing-list","uri":"billing-list", "name":"View", "icon":"feather icon-circle","policy":""},
+                {"url":"billing-modify", "uri":"billing-modify", "name":"Add/Modify", "icon":"feather icon-circle","policy":""}
+            ]
+        },
+    {"url":"","navheader":"Modules","icon":"","policy":""},
+        {"url":"", "name":"E-Reception Desk",  "icon":"feather icon-bell","policy":"product-smart-reception",
+          "submenu": [
+            {"url":"appointments","uri":"show-appointments", "name":"View", "icon":"feather icon-circle","policy":""},
+            {"url":"createAppointment","uri":"create-appointment", "name":"Add", "icon":"feather icon-circle","policy":"for-client"}
+
+          ]
+        },
+        {"url":"", "name":"E-Security Desk",  "icon":"feather icon-shield","policy":"product-smart-security",
+          "submenu": [
+            {"url":"registerVisitor","uri":"visitor-register", "name":"Add", "icon":"feather icon-circle","policy":"for-client"},
+            {"url":"visitors","uri":"visitors-view", "name":"View", "icon":"feather icon-circle","policy":""}
+          ]
+        },
+      {"url":"","navheader":"Specific","icon":"","policy":""},
+        {"url":"", "name":"Visitors Mgt",  "icon":"feather icon-users","policy":"for-superAdmin",
+          "submenu": [
+              {"url":"visitors-all","uri": "visitors-all", "name":"View all", "icon":"feather icon-circle","policy":"for-superAdmin"}
+          ]
+        },
+        {"url":"", "name":"My Organisation", "icon":"feather icon-briefcase","policy":"",
+          "submenu": [
+              {"url":"staffs","uri":"view-staff", "name":"Staff Management", "icon":"feather icon-circle","policy":"for-allAdmins"},
+              {"url":"organisation-profile","uri":"organisation-profile", "name":"View Profile", "icon":"feather icon-circle","policy":""},
+              {"url":"logs", "uri":"view-logs", "name":"Usage(Logs)", "icon":"feather icon-circle","policy":"for-none"}
+          ]
+        },
+        {"url":"","navheader":"Pages","icon":"","policy":""},
+          {"url":"user-profile","uri":"user-profile", "name":"Profile", "icon":"feather icon-user","policy":""},
+          {"url":"calendar","uri":"calendar-system", "name":"Calendar", "icon":"feather icon-calendar","policy":""},
+          {"url":"Reports","uri":"reports", "name":"Reports", "icon":"feather icon-book","policy":"for-allAdmins"},
+  {"url":"","navheader":"More","icon":"","policy":""},
+          {"url":"Settings", "name":"Settings","uri":"settings", "icon":"feather icon-settings","policy":""}
+]}
