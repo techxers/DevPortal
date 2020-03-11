@@ -5,15 +5,10 @@
             <li class="nav-item mr-auto">
                 <a class="navbar-brand" href="">{{--$organisation->website??'#'--}}
                     <div class="brand-logo">
-                        <img src="{{asset(config('app.file_path').($organisation->image??'organisation/logo/org_default.svg'))}}"
-                             class="w-100 rounded-circle" style="max-width: 36px;padding:2px" width="36px" height="36px">
+
                     </div>
                     <h2 class="brand-text mb-0 text-capitalize" style="padding-left: 4px">
-                        @if(strlen($organisation->name)<10)
-                            {{$organisation->name}}
-                        @else
-                            {{substr($organisation->name,0,10)}}..
-                        @endif
+                      Dev Portal
                     </h2>
                 </a></li>
             <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i
@@ -70,11 +65,7 @@
             @endforeach
             {{-- Foreach menu item ends --}}
         </ul>
-        <div class="pt-1 text-center">
-            <a href="javascript:void(0);" class="text-blue cs-text-shadow-white " style="font-size: 16px;opacity: .5">
-                &copy; NeutronIT
-            </a>
-        </div>
+
         {{--
 
           <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">

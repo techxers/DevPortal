@@ -183,7 +183,7 @@
                       
 
     
-    <a class="nav__button-secondary" href="{{route('login')}}" data-tracking-control-name="guest_homepage-basic_nav-header-signin" data-tracking-will-navigate>Sign in</a>
+    <a class="nav__button-secondary" href="<?php echo e(route('login')); ?>" data-tracking-control-name="guest_homepage-basic_nav-header-signin" data-tracking-will-navigate>Sign in</a>
 
   <section class="sign-in-card" data-impression-id="guest_homepage-basic_sign-in-card">
     <h2 class="sign-in-card__header">Don’t miss out</h2>
@@ -591,10 +591,7 @@
     </section>
 
 
-{{-- 
-<div class="section testimonials">
 
-</div>   --}}
 
 <section class="section">
   
@@ -900,3 +897,4 @@
   </body>
 </html>
 
+<?php /**PATH C:\wamp64\www\code\DevPortal\resources\views/landing/index.blade.php ENDPATH**/ ?>
